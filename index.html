@@ -3,30 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <title>Clarity - Digital Solutions Platform</title>
 
-    <title>Games website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg page-bg border-bottom border-1">
-      <div class="container px-4 py-2">
-        <a class="logo main-clr fw-bold" href="#">
-          <i class="fa-solid fa-gamepad me-2"></i>GameArena</a
-        >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <nav
+      class="navbar navbar-expand-lg border-bottom fixed-top bg-white p-0"
+      id="navbar-example"
+    >
+      <div class="container-fluid p-0 position-relative">
+        <a class="navbar-brand me-5 p-0" href="#">
+          <div class="logo d-flex text-white align-items-center">
+            <div
+              class="icon bg-main d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <p class="m-0 txt-main fw-bold fs-4">Clarity</p>
+          </div>
+        </a>
+
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -36,1326 +62,2557 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div
+          class="collapse navbar-collapse position-relative"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link main-clr" href="#hero">home</a>
+            <li class="nav-item fw-medium">
+              <a class="nav-link p-0 active" aria-current="page" href="#hero"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#latest-games">OUR GAMES</a>
+
+            <li class="nav-item fw-medium">
+              <input type="checkbox" id="mga-toggle" hidden />
+
+              <a class="nav-link p-0" href="#">
+                <label for="mga-toggle">
+                  Services
+                  <i class="fa-solid fa-angle-up"></i>
+                  <i class="fa-solid fa-angle-down d-none"></i>
+                </label>
+              </a>
+
+              <div class="mega bg-white position-absolute mt-2 rounded-4">
+                <div class="inner">
+                  <div class="item p-0">
+                    <div class="inner-item">
+                      <h3 class="mb-3 txt-main fw-bold lh-base text-uppercase">
+                        Development
+                      </h3>
+                      <div>
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-code"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">
+                              web development
+                            </p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Custom web applications & websites
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-mobile"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">
+                              mobile development
+                            </p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Custom mobile applications
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-palette"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">
+                              UI/UX design
+                            </p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Creative and user-friendly designs
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 2 -->
+                  <div class="item p-0">
+                    <div class="inner-item">
+                      <h3 class="mb-3 txt-main fw-bold lh-base text-uppercase">
+                        Development
+                      </h3>
+                      <div>
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-cloud"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">
+                              cloud services
+                            </p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Cloud integration & solutions
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-brain"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">
+                              AI solutions
+                            </p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Artificial intelligence integration
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-database"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">
+                              database management
+                            </p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Secure and efficient database solutions
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 3 -->
+                  <div class="item item3 p-0">
+                    <div class="inner-item">
+                      <h3 class="mb-3 txt-main fw-bold lh-base text-uppercase">
+                        Development
+                      </h3>
+                      <div class="elems mb-4">
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-chart-line"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">analytics</p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Data-driven insights for your business
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="index.html"
+                          class="elem d-flex mb-2 align-items-center text-decoration-none"
+                        >
+                          <div
+                            class="icon d-flex align-items-center justify-content-center txt-main"
+                          >
+                            <i class="fa-solid fa-bullhorn"></i>
+                          </div>
+                          <div>
+                            <p class="m-0 fw-semibold text-black">marketing</p>
+                            <p class="m-0 text-secondary fw-normal">
+                              Promote your business effectively
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="help p-3 border w-auto">
+                        <h4 class="fw-bold fs-6 lh-base">
+                          Need help choosing?
+                        </h4>
+                        <p class="text-secondary fw-normal">
+                          Talk to our experts to find the perfect solution for
+                          your business.
+                        </p>
+                        <a
+                          href="index.html"
+                          class="m-0 fw-semibold txt-main text-decoration-none"
+                        >
+                          Contact us
+                          <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#we-go">What We Do</a>
+
+            <li class="nav-item fw-medium">
+              <a class="nav-link p-0" href="#tech">Technology</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#team">Our Team</a>
+            <li class="nav-item fw-medium">
+              <a class="nav-link p-0" href="#testimonials">Testimonials</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Tournaments</a>
+            <li class="nav-item fw-medium">
+              <a class="nav-link p-0" href="#faq">FAQ</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact Us</a>
+            <li class="nav-item fw-medium">
+              <a class="nav-link p-0" href="#contact">Contact</a>
             </li>
           </ul>
-          <hr class="d-lg-block text-secondary" />
-          <button class="btn d-block p-0 pe-3 p-lg-3" type="submit">
-            <i class="fa-regular fa-bell me-2"></i>
-            <span class="text-white d-inline-block d-lg-none">
-              Notifications
-            </span>
-          </button>
-          <button class="btn d-block p-0 p-lg-3" type="submit">
-            <i class="fa-regular fa-comment me-2"></i>
-            <span class="text-white d-inline-block d-lg-none"> Messages </span>
-          </button>
-          <div class="d-flex">
+
+          <div class="btns p-0">
             <button
-              class="btn main-bg fw-bold px-4 py-2 shine flex-grow-1 flex-lg-grow-0"
-              type="submit"
+              type="button"
+              class="border-0 me-3 py-2 px-4 bg-transparent fw-medium"
             >
-              sign in
+              Sign in
+            </button>
+            <button
+              type="button"
+              class="border-0 me-3 bg-main text-white rounded-5 fw-medium"
+            >
+              Get Started
             </button>
           </div>
         </div>
       </div>
     </nav>
-    <div class="hero bg-danger min-vh-100 d-flex" id="hero">
-      <div class="container mt-auto mb-auto d-block d-xl-flex">
-        <div
-          class="left m-auto text-center text-xl-start mb-xl-0 mb-5 col-xl-6 col-12"
-        >
-          <div class="head">
-            <h1 class="fs-2 lh-base text-white">
-              THE ULTIMATE
-              <br />
-              <span class="main-clr"> GAMING </span>
-              <br />
-              EXPERIENCE
-            </h1>
-          </div>
-          <p class="text text-white">
-            Join millions of gamers worldwide in the most competitive eSports
-            tournaments. Experience next-level gaming with cutting-edge
-            technology and endless possibilities.
-          </p>
-          <div
-            class="btns justify-content-xl-start justify-content-center flex-column flex-sm-row"
-          >
-            <button class="shine" type="button ">start gaming now</button>
-            <button class="shine" type="button">watch Tournaments</button>
-          </div>
-        </div>
-        <div class="right m-auto w-100">
-          <div class="hero-image m-auto">
-            <img src="hero-img.png" alt="" />
-          </div>
-          <div class="players">
-            <i class="fa-solid fa-trophy main-clr"></i>
-            <div class="item">
-              <p>active players</p>
-              <p class="text-white">2.5M+</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="latest-games bg-black" id="latest-games">
-      <div class="container-xl">
-        <div class="title">
-          <p class="text">our games</p>
-          <h2>Our Latest Games</h2>
-        </div>
 
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="inner row flex-nowrap g-4">
-                <div class="item col-12 col-md-6 col-xl-4">
-                  <div class="card p-0 rounded-4 bg-transparent border-0">
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-9.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item medium-media col-12 col-md-6 col-xl-4">
-                  <div class="card p-0 rounded-4 bg-transparent border-0">
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-1.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item col-12 col-md-6 col-xl-4">
+    <main>
+      <section id="hero" class="hero min-vh-100 d-flex align-items-center">
+        <div class="container-fluid">
+          <div class="package d-grid">
+            <div class="left">
+              <div class="inner">
+                <div class="txt">
                   <div
-                    class="card small-media p-0 rounded-4 bg-transparent border-0"
+                    class="main-header py-2 px-3 mb-4 rounded-5 txt-main d-inline-block fw-medium"
                   >
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-2.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <span>Transforming Digital Experiences</span>
+                  </div>
+                  <h1 class="mb-4">
+                    <span>Digital Solutions</span>
+                    <br />
+                    <span>That Drive</span>
+                    <br />
+                    <span>Growth</span>
+                  </h1>
+                  <p class="m-0 fw-normal fs-5">
+                    We craft innovative digital experiences that transform
+                    businesses and accelerate growth. From cutting-edge web
+                    applications to mobile solutions, we deliver technology that
+                    makes a difference.
+                  </p>
+                </div>
+
+                <div class="hero-btns d-block d-md-flex gap-3 fw-semibold">
+                  <button
+                    type="button"
+                    class="bg-main text-white rounded-5 border-0 fw-semibold"
+                  >
+                    Start Your Project
+                    <i class="ms-2 fa-solid fa-arrow-right"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="bg-transparent rounded-5 border fw-semibold"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                    Watch Demo
+                  </button>
+                </div>
+                <div class="analysis d-flex">
+                  <div class="item">
+                    <div class="txt-main text-center fw-bold">500+</div>
+                    <div>Projects Delivered</div>
+                  </div>
+                  <div class="item">
+                    <div class="txt-main text-center fw-bold">98%</div>
+                    <div>Client Satisfaction</div>
+                  </div>
+                  <div class="item">
+                    <div class="txt-main text-center fw-bold">24/7</div>
+                    <div>Support</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="inner row flex-nowrap overflow-hidden">
-                <div class="item col-12 col-md-6 col-xl-4">
-                  <div class="card p-0 rounded-4 bg-transparent border-0">
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-3.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item medium-media col-12 col-md-6 col-xl-4">
-                  <div class="card p-0 rounded-4 bg-transparent border-0">
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-4.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item col-12 col-md-6 col-xl-4">
-                  <div
-                    class="card small-media p-0 rounded-4 bg-transparent border-0"
-                  >
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-5.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="right position-relative d-flex align-self-center">
+              <div
+                class="image w-100 h-100 overflow-hidden position-relative z-2 bg-white"
+              >
+                <img
+                  class="w-100 h-100 rounded-4"
+                  src="./hero-img-sGwnWbTh.png"
+                  alt="this is an image "
+                />
               </div>
-            </div>
+              <div
+                class="back position-absolute top-0 w-100 h-100 start-0 z-1"
+              ></div>
 
-            <div class="carousel-item">
-              <div class="inner row flex-nowrap overflow-hidden">
-                <div class="item col-12 col-md-6 col-xl-4">
-                  <div class="card p-0 rounded-4 bg-transparent border-0">
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-6.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item medium-media col-12 col-md-6 col-xl-4">
-                  <div class="card p-0 rounded-4 bg-transparent border-0">
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-7.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item col-12 col-md-6 col-xl-4">
-                  <div
-                    class="card small-media p-0 rounded-4 bg-transparent border-0"
-                  >
-                    <div class="image position-relative overflow-hidden">
-                      <img
-                        src="latest-games-8.png"
-                        class="card-img-top rounded-4 position-relative w-100 d-block z-1"
-                        alt="..."
-                      />
-                      <div
-                        class="details position-absolute w-100 h-100 z-2 top-0 start-0 p-2 d-flex flex-column justify-content-between"
-                      >
-                        <div class="items d-flex gap-3">
-                          <span class="back"
-                            ><i
-                              class="fa-solid fa-gamepad m-0 me-2 main-clr"
-                            ></i>
-                            adventure</span
-                          >
-                          <span
-                            ><i
-                              class="fa-solid fa-people-group m-0 me-2 main-clr"
-                            ></i>
-                            multiplayer</span
-                          >
-                        </div>
-                        <div class="game-desc p-4">
-                          <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div
+                class="hero-icon hero-icon-1 position-absolute bg-main d-flex align-items-center justify-content-center text-white z-3"
+              >
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <div
+                class="hero-icon position-absolute d-flex align-items-center justify-content-center text-white z-3"
+              >
+                <i class="fa-solid fa-code"> </i>
               </div>
             </div>
           </div>
         </div>
-
-        <div
-          class="controls mt-5 d-flex flex-column flex-sm-row justify-content-center gap-3 align-items-center"
-        >
-          <div class="arrows d-flex align-items-center">
-            <button
-              class="me-2 position-static carousel-control-prev border-secondary border border-2 rounded-circle d-flex align-items-center justify-content-center"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
+      </section>
+      <section class="services" id="services">
+        <div class="container-fluid">
+          <div class="title text-center">
+            <div
+              class="main-header py-2 px-3 mb-4 rounded-5 txt-main d-inline-block fw-medium"
             >
-              <span class="d-flex align-items-center">
-                <i
-                  class="fa-solid fa-arrow-left m-0 text-secondary opacity-100"
-                ></i
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="position-static carousel-control-next border border-2 border-secondary rounded-circle d-flex align-items-center justify-content-center"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span class="d-flex align-items-center">
-                <i
-                  class="fa-solid fa-arrow-right m-0 text-secondary opacity-100"
-                ></i>
-              </span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <i class="fa-solid fa-gears"></i>
+              <span>Our Services</span>
+            </div>
+            <h2 class="mb-4">
+              <span>Comprehensive </span>
+              <span>Digital Solutions</span>
+            </h2>
+            <p class="fw-normal fs-5">
+              From concept to deployment, we provide end-to-end digital services
+              <br />
+              that transform your business and engage your customers.
+            </p>
           </div>
-          <button
-            type="button"
-            class="border border-2 fw-bold align-self-stretch bg-black rounded-2 text-uppercase"
-          >
-            view all games
-          </button>
+
+          <div class="package row">
+            <!-- Web Development -->
+            <div class="item col-12 col-md-6 col-lg-4 g-4">
+              <div class="inner border rounded-4 h-100">
+                <div
+                  class="icon mb-4 d-flex align-items-center justify-content-center bg-main text-white"
+                >
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="mb-3 fw-bold fs-5">Web Development</h3>
+                <p class="mb-4">
+                  Custom web applications built with cutting-edge technologies.
+                  Responsive, scalable, and optimized for performance.
+                </p>
+                <div class="features mb-4">
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>React & Next.js Development</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>E-commerce Solutions</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Progressive Web Apps</span>
+                  </div>
+                </div>
+                <a class="fw-semibold txt-main text-decoration-none" href="#">
+                  Learn More <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Mobile Applications -->
+            <div class="item col-12 col-md-6 col-lg-4 g-4">
+              <div class="inner border rounded-4 h-100">
+                <div
+                  class="icon mb-4 d-flex align-items-center justify-content-center bg-main text-white"
+                >
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <h3 class="mb-3 fw-bold fs-5">Mobile Applications</h3>
+                <p class="mb-4">
+                  Native and cross-platform mobile apps that deliver exceptional
+                  user experiences across all devices.
+                </p>
+                <div class="features mb-4">
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>iOS & Android Development</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>React Native & Flutter</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>App Store Optimization</span>
+                  </div>
+                </div>
+                <a class="fw-semibold txt-main text-decoration-none" href="#">
+                  Learn More <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Cloud Solutions -->
+            <div class="item col-12 col-md-6 col-lg-4 g-4">
+              <div class="inner border rounded-4 h-100">
+                <div
+                  class="icon mb-4 d-flex align-items-center justify-content-center bg-main text-white"
+                >
+                  <i class="fa-solid fa-cloud"></i>
+                </div>
+                <h3 class="mb-3 fw-bold fs-5">Cloud Solutions</h3>
+                <p class="mb-4">
+                  Scalable cloud infrastructure and services that grow with your
+                  business needs and ensure maximum uptime.
+                </p>
+                <div class="features mb-4">
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>AWS & Azure Integration</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>DevOps & CI/CD</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Microservices Architecture</span>
+                  </div>
+                </div>
+                <a class="fw-semibold txt-main text-decoration-none" href="#">
+                  Learn More <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- AI & Machine Learning -->
+            <div class="item col-12 col-md-6 col-lg-4 g-4">
+              <div class="inner border rounded-4 h-100">
+                <div
+                  class="icon mb-4 d-flex align-items-center justify-content-center bg-main text-white"
+                >
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="mb-3 fw-bold fs-5">AI & Machine Learning</h3>
+                <p class="mb-4">
+                  Intelligent solutions powered by artificial intelligence and
+                  machine learning to automate and optimize processes.
+                </p>
+                <div class="features mb-4">
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Predictive Analytics</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Natural Language Processing</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Computer Vision</span>
+                  </div>
+                </div>
+                <a class="fw-semibold txt-main text-decoration-none" href="#">
+                  Learn More <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="item col-12 col-md-6 col-lg-4 g-4">
+              <div class="inner border rounded-4 h-100">
+                <div
+                  class="icon mb-4 d-flex align-items-center justify-content-center bg-main text-white"
+                >
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="mb-3 fw-bold fs-5">Digital Marketing</h3>
+                <p class="mb-4">
+                  Data-driven marketing strategies that increase brand
+                  visibility and drive customer engagement across all channels.
+                </p>
+                <div class="features mb-4">
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>SEO & SEM Optimization</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Social Media Management</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Content Strategy</span>
+                  </div>
+                </div>
+                <a class="fw-semibold txt-main text-decoration-none" href="#">
+                  Learn More <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div class="item col-12 col-md-6 col-lg-4 g-4">
+              <div class="inner border rounded-4 h-100">
+                <div
+                  class="icon mb-4 d-flex align-items-center justify-content-center bg-main text-white"
+                >
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3 class="mb-3 fw-bold fs-5">UI/UX Design</h3>
+                <p class="mb-4">
+                  User-centered design that creates intuitive, beautiful, and
+                  accessible digital experiences that users love.
+                </p>
+                <div class="features mb-4">
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>User Research & Testing</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Wireframing & Prototyping</span>
+                  </div>
+                  <div class="ele mb-2">
+                    <i class="me-2 fa-solid fa-check"></i
+                    ><span>Design Systems</span>
+                  </div>
+                </div>
+                <a class="fw-semibold txt-main text-decoration-none" href="#">
+                  Learn More <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="we-go bg-black" id="we-go">
-      <div class="container">
-        <div class="title">
-          <p class="text">where we go</p>
-          <h2>More Than Just Games</h2>
-          <p class="title-desc text-white fw-bold m-0">
-            We Build <span class="main-clr">Interactive</span> Journeys
-          </p>
+      </section>
+      <section class="tech" id="tech">
+        <div class="container-fluid">
+          <div class="title text-center">
+            <div
+              class="main-header py-2 px-3 mb-4 rounded-5 txt-main d-inline-block fw-medium"
+            >
+              <i class="fa-solid fa-gear"></i>
+              <span>Technology Stack</span>
+            </div>
+            <h2 class="mb-4">
+              <span>Cutting-Edge</span>
+              <span>Technologies</span>
+            </h2>
+            <p class="fw-normal fs-5">
+              We leverage the latest technologies and frameworks to build
+              scalable, secure,
+              <br />
+              and high-performance solutions.
+            </p>
+          </div>
+          <main class="">
+            <ul
+              class="nav nav-tabs d-flex justify-content-center border-bottom"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="nav-frontend-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#frontend"
+                  href="#frontend"
+                  role="tab"
+                  aria-controls="frontend"
+                  aria-selected="true"
+                >
+                  <i class="me-2 fa-solid fa-code"></i>
+                  <span class="fw-semibold">Frontend</span>
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="nav-backend-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#backend"
+                  href="#backend"
+                  role="tab"
+                  aria-controls="backend"
+                  aria-selected="false"
+                >
+                  <i class="me-2 fa-solid fa-server"></i>
+                  <span class="fw-semibold">Backend</span>
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="nav-mobile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#mobile"
+                  href="#mobile"
+                  role="tab"
+                  aria-controls="mobile"
+                  aria-selected="false"
+                >
+                  <i class="me-2 fa-solid fa-mobile-screen"></i>
+                  <span class="fw-semibold">Mobile</span>
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="nav-cloud-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cloud"
+                  href="#cloud"
+                  role="tab"
+                  aria-controls="cloud"
+                  aria-selected="false"
+                >
+                  <i class="me-2 fa-solid fa-cloud"></i>
+                  <span class="fw-semibold">Cloud & DevOps</span>
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="nav-database-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#database"
+                  href="#database"
+                  role="tab"
+                  aria-controls="database"
+                  aria-selected="false"
+                >
+                  <i class="me-2 fa-solid fa-database"></i>
+                  <span class="fw-semibold">Database</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="panel">
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="frontend"
+                  role="tabpanel"
+                  aria-labelledby="nav-frontend-tab"
+                  tabindex="0"
+                >
+                  <div class="body">
+                    <div class="title text-center">
+                      <h3 class="fw-bold mb-3">Frontend Technologies</h3>
+                      <p>
+                        Modern frameworks and libraries for creating exceptional
+                        user interfaces
+                      </p>
+                    </div>
+                    <div class="content row g-4">
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #3b82f6"
+                          >
+                            <i class="fa-brands fa-react"></i>
+                          </div>
+                          <h4 class="fw-bold">React.js</h4>
+                          <p class="mb-3">
+                            Component-based library for building interactive
+                            user interfaces with virtual DOM
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">JSX</span>
+                            <span class="rounded-4 text-primary">Hooks</span>
+                            <span class="rounded-4 text-primary">Redux</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-dark-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #000000"
+                          >
+                            <i class="fa-solid fa-n"></i>
+                          </div>
+                          <h4 class="fw-bold">Next.js</h4>
+                          <p class="mb-3">
+                            Full-stack React framework with server-side
+                            rendering and static generation
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-dark">SSR</span>
+                            <span class="rounded-4 text-dark">SSG</span>
+                            <span class="rounded-4 text-dark">API Routes</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-success-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #10b981"
+                          >
+                            <i class="fa-brands fa-vuejs"></i>
+                          </div>
+                          <h4 class="fw-bold">Vue.js</h4>
+                          <p class="mb-3">
+                            Progressive framework for building user interfaces
+                            with excellent developer experience
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-success"
+                              >Composition API</span
+                            >
+                            <span class="rounded-4 text-success">Vuex</span>
+                            <span class="rounded-4 text-success">Nuxt</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-warning-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #f97316"
+                          >
+                            <i class="fa-brands fa-angular"></i>
+                          </div>
+                          <h4 class="fw-bold">Angular</h4>
+                          <p class="mb-3">
+                            Comprehensive platform for building scalable web
+                            applications
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-warning-emphasis"
+                              >TypeScript</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >RxJS</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >CLI</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-info-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #06b6d4"
+                          >
+                            <i class="fa-solid fa-wind"></i>
+                          </div>
+                          <h4 class="fw-bold">Tailwind CSS</h4>
+                          <p class="mb-3">
+                            Utility-first CSS framework for rapid UI development
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-info-emphasis"
+                              >JIT</span
+                            >
+                            <span class="rounded-4 text-info-emphasis"
+                              >Components</span
+                            >
+                            <span class="rounded-4 text-info-emphasis"
+                              >Responsive</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #a855f7"
+                          >
+                            <i class="fa-solid fa-bolt"></i>
+                          </div>
+                          <h4 class="fw-bold">Vite</h4>
+                          <p class="mb-3">
+                            Next generation frontend tooling with lightning fast
+                            builds
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary-emphasis"
+                              >HMR</span
+                            >
+                            <span class="rounded-4 text-primary-emphasis"
+                              >ESM</span
+                            >
+                            <span class="rounded-4 text-primary-emphasis"
+                              >Rollup</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="backend"
+                  role="tabpanel"
+                  aria-labelledby="nav-backend-tab"
+                  tabindex="0"
+                >
+                  <div class="body">
+                    <div class="title text-center">
+                      <h3 class="fw-bold mb-3">Backend Technologies</h3>
+                      <p>
+                        Robust server-side technologies for scalable and secure
+                        applications
+                      </p>
+                    </div>
+                    <div class="content row g-4">
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-success-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #22c55e"
+                          >
+                            <i class="fa-brands fa-node-js"></i>
+                          </div>
+                          <h4 class="fw-bold">Node.js</h4>
+                          <p class="mb-3">
+                            JavaScript runtime built on Chrome's V8 engine for
+                            server-side development
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-success"
+                              >Express.js</span
+                            >
+                            <span class="rounded-4 text-success">NPM</span>
+                            <span class="rounded-4 text-success"
+                              >TypeScript</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #2563eb"
+                          >
+                            <i class="fa-brands fa-python"></i>
+                          </div>
+                          <h4 class="fw-bold">Python</h4>
+                          <p class="mb-3">
+                            Versatile programming language with powerful
+                            frameworks for web development
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">Django</span>
+                            <span class="rounded-4 text-primary">FastAPI</span>
+                            <span class="rounded-4 text-primary">Flask</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-danger-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #ef4444"
+                          >
+                            <i class="fa-brands fa-golang"></i>
+                          </div>
+                          <h4 class="fw-bold">Golang</h4>
+                          <p class="mb-3">
+                            Fast, statically typed language designed for modern
+                            software development
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-danger">Gin</span>
+                            <span class="rounded-4 text-danger"
+                              >Goroutines</span
+                            >
+                            <span class="rounded-4 text-danger"
+                              >Microservices</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #a855f7"
+                          >
+                            <i class="fa-brands fa-java"></i>
+                          </div>
+                          <h4 class="fw-bold">Java</h4>
+                          <p class="mb-3">
+                            Enterprise-grade platform with robust frameworks for
+                            large-scale applications
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary"
+                              >Spring Boot</span
+                            >
+                            <span class="rounded-4 text-primary"
+                              >Hibernate</span
+                            >
+                            <span class="rounded-4 text-primary">Maven</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #4f46e5"
+                          >
+                            .NET
+                          </div>
+                          <h4 class="fw-bold">.NET Core</h4>
+                          <p class="mb-3">
+                            Cross-platform framework for building modern,
+                            cloud-based applications
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">C#</span>
+                            <span class="rounded-4 text-primary"
+                              >Entity Framework</span
+                            >
+                            <span class="rounded-4 text-primary">Azure</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-success-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #0d9488"
+                          >
+                            <i class="fa-solid fa-gem"></i>
+                          </div>
+                          <h4 class="fw-bold">Ruby</h4>
+                          <p class="mb-3">
+                            Dynamic language focused on simplicity and
+                            productivity
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-success">Rails</span>
+                            <span class="rounded-4 text-success">Sinatra</span>
+                            <span class="rounded-4 text-success">RubyGems</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="mobile"
+                  role="tabpanel"
+                  aria-labelledby="nav-mobile-tab"
+                  tabindex="0"
+                >
+                  <div class="body">
+                    <div class="title text-center">
+                      <h3 class="fw-bold mb-3">Mobile Technologies</h3>
+                      <p>
+                        Native and cross-platform solutions for iOS and Android
+                        development
+                      </p>
+                    </div>
+                    <div class="content row g-4">
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #2563eb"
+                          >
+                            <i class="fa-brands fa-react"></i>
+                          </div>
+                          <h4 class="fw-bold">React Native</h4>
+                          <p class="mb-3">
+                            Cross-platform mobile development using React and
+                            JavaScript
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">Expo</span>
+                            <span class="rounded-4 text-primary"
+                              >Navigation</span
+                            >
+                            <span class="rounded-4 text-primary">Redux</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-info-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #06b6d4"
+                          >
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                          </div>
+                          <h4 class="fw-bold">Flutter</h4>
+                          <p class="mb-3">
+                            Google's UI toolkit for building natively compiled
+                            applications
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-info-emphasis"
+                              >Dart</span
+                            >
+                            <span class="rounded-4 text-info-emphasis"
+                              >Widgets</span
+                            >
+                            <span class="rounded-4 text-info-emphasis"
+                              >Material</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-secondary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #374151"
+                          >
+                            <i class="fa-brands fa-apple"></i>
+                          </div>
+                          <h4 class="fw-bold">iOS Native</h4>
+                          <p class="mb-3">
+                            Native iOS development using Swift and Xcode
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-secondary">Swift</span>
+                            <span class="rounded-4 text-secondary"
+                              >SwiftUI</span
+                            >
+                            <span class="rounded-4 text-secondary"
+                              >Core Data</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-success-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #16a34a"
+                          >
+                            <i class="fa-brands fa-android"></i>
+                          </div>
+                          <h4 class="fw-bold">Android Native</h4>
+                          <p class="mb-3">
+                            Native Android development using Kotlin and Android
+                            Studio
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-success">Kotlin</span>
+                            <span class="rounded-4 text-success">Jetpack</span>
+                            <span class="rounded-4 text-success">Room</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #9333ea"
+                          >
+                            <i class="fa-solid fa-code"></i>
+                          </div>
+                          <h4 class="fw-bold">Xamarin</h4>
+                          <p class="mb-3">
+                            Microsoft's cross-platform solution using C# and
+                            .NET
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">C#</span>
+                            <span class="rounded-4 text-primary">Forms</span>
+                            <span class="rounded-4 text-primary">MVVM</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-warning-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #ea580c"
+                          >
+                            <i class="fa-solid fa-globe"></i>
+                          </div>
+                          <h4 class="fw-bold">PWA</h4>
+                          <p class="mb-3">
+                            Progressive Web Apps with native-like mobile
+                            experiences
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-warning-emphasis"
+                              >Service Worker</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >Manifest</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >Offline</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="cloud"
+                  role="tabpanel"
+                  aria-labelledby="nav-cloud-tab"
+                  tabindex="0"
+                >
+                  <div class="body">
+                    <div class="title text-center">
+                      <h3 class="fw-bold mb-3">Cloud & DevOps</h3>
+                      <p>
+                        Modern cloud infrastructure and deployment technologies
+                      </p>
+                    </div>
+                    <div class="content row g-4">
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-warning-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #f97316"
+                          >
+                            <i class="fa-brands fa-aws"></i>
+                          </div>
+                          <h4 class="fw-bold">Amazon AWS</h4>
+                          <p class="mb-3">
+                            Comprehensive cloud computing platform with
+                            extensive services
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-warning-emphasis"
+                              >EC2</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >Lambda</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >S3</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #3b82f6"
+                          >
+                            <i class="fa-brands fa-microsoft"></i>
+                          </div>
+                          <h4 class="fw-bold">Microsoft Azure</h4>
+                          <p class="mb-3">
+                            Enterprise cloud platform with integrated
+                            development tools
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary"
+                              >App Service</span
+                            >
+                            <span class="rounded-4 text-primary"
+                              >Functions</span
+                            >
+                            <span class="rounded-4 text-primary">DevOps</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-danger-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #ef4444"
+                          >
+                            <i class="fa-brands fa-google"></i>
+                          </div>
+                          <h4 class="fw-bold">Google Cloud</h4>
+                          <p class="mb-3">
+                            Google's cloud computing platform with AI and ML
+                            capabilities
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-danger"
+                              >Compute Engine</span
+                            >
+                            <span class="rounded-4 text-danger">Cloud Run</span>
+                            <span class="rounded-4 text-danger">BigQuery</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #3b82f6"
+                          >
+                            <i class="fa-brands fa-docker"></i>
+                          </div>
+                          <h4 class="fw-bold">Docker</h4>
+                          <p class="mb-3">
+                            Containerization platform for consistent application
+                            deployment
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary"
+                              >Containers</span
+                            >
+                            <span class="rounded-4 text-primary">Images</span>
+                            <span class="rounded-4 text-primary">Compose</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #a855f7"
+                          >
+                            K8s
+                          </div>
+                          <h4 class="fw-bold">Kubernetes</h4>
+                          <p class="mb-3">
+                            Container orchestration system for automating
+                            deployment and scaling
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">Pods</span>
+                            <span class="rounded-4 text-primary">Services</span>
+                            <span class="rounded-4 text-primary">Helm</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-secondary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #374151"
+                          >
+                            <i class="fa-solid fa-gears"></i>
+                          </div>
+                          <h4 class="fw-bold">CI/CD Pipeline</h4>
+                          <p class="mb-3">
+                            Automated build, test, and deployment workflows
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-secondary"
+                              >Jenkins</span
+                            >
+                            <span class="rounded-4 text-secondary"
+                              >GitHub Actions</span
+                            >
+                            <span class="rounded-4 text-secondary"
+                              >GitLab CI</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="database"
+                  role="tabpanel"
+                  aria-labelledby="nav-database-tab"
+                  tabindex="0"
+                >
+                  <div class="body">
+                    <div class="title text-center">
+                      <h3 class="fw-bold mb-3">Database Technologies</h3>
+                      <p>
+                        Robust data storage solutions for modern applications
+                      </p>
+                    </div>
+                    <div class="content row g-4">
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #0369a1"
+                          >
+                            <i class="fa-solid fa-database"></i>
+                          </div>
+                          <h4 class="fw-bold">PostgreSQL</h4>
+                          <p class="mb-3">
+                            Advanced open-source relational database with JSON
+                            support
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">ACID</span>
+                            <span class="rounded-4 text-primary">JSON</span>
+                            <span class="rounded-4 text-primary"
+                              >Extensions</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-success-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #15803d"
+                          >
+                            <span class="fw-bold fs-6 bg-transparent p-0"
+                              >Mongo</span
+                            >
+                          </div>
+                          <h4 class="fw-bold">MongoDB</h4>
+                          <p class="mb-3">
+                            Flexible NoSQL document database for modern
+                            applications
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-success"
+                              >Documents</span
+                            >
+                            <span class="rounded-4 text-success"
+                              >Aggregation</span
+                            >
+                            <span class="rounded-4 text-success">Sharding</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-danger-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #b91c1c"
+                          >
+                            <i class="fa-solid fa-fire"></i>
+                          </div>
+                          <h4 class="fw-bold">Redis</h4>
+                          <p class="mb-3">
+                            In-memory data structure store for caching and
+                            real-time applications
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-danger">Cache</span>
+                            <span class="rounded-4 text-danger">Pub/Sub</span>
+                            <span class="rounded-4 text-danger">Streams</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-warning-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #d97706"
+                          >
+                            <i class="fa-solid fa-database"></i>
+                          </div>
+                          <h4 class="fw-bold">MySQL</h4>
+                          <p class="mb-3">
+                            Popular open-source relational database management
+                            system
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-warning-emphasis"
+                              >InnoDB</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >Replication</span
+                            >
+                            <span class="rounded-4 text-warning-emphasis"
+                              >Clustering</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #a855f7"
+                          >
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                          </div>
+                          <h4 class="fw-bold">Elasticsearch</h4>
+                          <p class="mb-3">
+                            Distributed search and analytics engine for complex
+                            queries
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary-emphasis"
+                              >Search</span
+                            >
+                            <span class="rounded-4 text-primary-emphasis"
+                              >Analytics</span
+                            >
+                            <span class="rounded-4 text-primary-emphasis"
+                              >Kibana</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-12 col-md-6 col-lg-4">
+                        <div class="h-100 inner rounded-4 bg-primary-subtle">
+                          <div
+                            class="icon mb-4 d-flex align-items-center justify-content-center text-white"
+                            style="background-color: #3b82f6"
+                          >
+                            <i class="fa-solid fa-share-nodes"></i>
+                          </div>
+                          <h4 class="fw-bold">GraphQL</h4>
+                          <p class="mb-3">
+                            Query language and runtime for APIs with flexible
+                            data fetching
+                          </p>
+                          <div class="d-flex gap-1">
+                            <span class="rounded-4 text-primary">Schema</span>
+                            <span class="rounded-4 text-primary"
+                              >Resolvers</span
+                            >
+                            <span class="rounded-4 text-primary">Apollo</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
-        <div class="container-xl">
-          <div class="inner row g-4">
-            <div class="game-card col-6 col-lg-3">
-              <div
-                class="item border border-2 p-4 overflow-hidden second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
-              >
+      </section>
+      <section class="testimonials" id="testimonials">
+        <div class="container-fluid">
+          <div class="title text-center">
+            <div
+              class="main-header py-2 px-3 mb-4 rounded-5 txt-main d-inline-block fw-medium"
+            >
+              <i class="fa-solid fa-heart"></i>
+              <span>Client Testimonials</span>
+            </div>
+            <h2 class="mb-4">
+              <span>What Our</span>
+              <span>Clients Say</span>
+            </h2>
+            <p class="fw-normal fs-5">
+              Don't just take our word for it. Here's what our clients have to
+              say about working
+              <br />
+              with us.
+            </p>
+          </div>
+          <main>
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner p-4">
                 <div
-                  class="icon rounded rounded-2 d-flex align-items-center justify-content-center"
+                  class="carousel-item active bg-white"
+                  data-bs-interval="2000"
                 >
-                  <i class="fa-solid fa-desktop"></i>
+                  <div
+                    class="status d-block d-md-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex gap-3 align-items-center mb-3 mb-md-0">
+                      <div
+                        class="icon m-0 rounded-4 d-flex align-items-center justify-content-center fw-normal txt-main"
+                      >
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <div class="details">
+                        <div class="d-flex gap-1">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                        <span class="d-inline-block">0.5 rating</span>
+                      </div>
+                    </div>
+                    <div class="rounded-5 py-2 px-3 txt-main">
+                      <i class="fa-solid fa-circle-check"></i>
+                      <span>varified</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    "Clarity transformed our entire digital presence. Their
+                    team's expertise and dedication resulted in a 300% increase
+                    in our online sales. Absolutely phenomenal work!"
+                  </blockquote>
+                  <hr />
+                  <div
+                    class="profile d-block d-md-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center flex-md-row"
+                    >
+                      <div
+                        class="position-relative bg rounded-circle out-image"
+                      >
+                        <div
+                          class="image rounded-circle overflow-hidden bg-white border border-3"
+                        >
+                          <img
+                            class="w-100 h-100 rounded-circle"
+                            src="./avatar-1.jpg"
+                            alt="profile"
+                          />
+                        </div>
+                        <div
+                          class="check position-absolute bg-main rounded-circle text-white d-flex align-items-center justify-content-center border border-2 border-white bottom-0 end-0"
+                        >
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="data">
+                        <div class="name fw-bold">Ahmed Moneim</div>
+                        <div>VP of Operations, TechCorp</div>
+                        <div class="lin-in d-flex">
+                          <i class="fa-brands fa-linkedin"></i>
+                          <span>Verified on LinkedIn</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="rate text-end d-none d-md-block">
+                      <div class="fw-bold txt-main">100K+</div>
+                      <div class="fw-medium">Downtime</div>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="m-0 text-center">
-                  PS4 game
-                  <br />
-                  Development
-                </h3>
+                <div class="carousel-item bg-white" data-bs-interval="2000">
+                  <div
+                    class="status d-block d-md-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex gap-3 align-items-center mb-3 mb-md-0">
+                      <div
+                        class="icon m-0 rounded-4 d-flex align-items-center justify-content-center fw-normal txt-main"
+                      >
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <div class="details">
+                        <div class="d-flex gap-1">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                        <span class="d-inline-block">0.5 rating</span>
+                      </div>
+                    </div>
+                    <div class="rounded-5 py-2 px-3 txt-main">
+                      <i class="fa-solid fa-circle-check"></i>
+                      <span>varified</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    "Clarity transformed our entire digital presence. Their
+                    team's expertise and dedication resulted in a 300% increase
+                    in our online sales. Absolutely phenomenal work!"
+                  </blockquote>
+                  <hr />
+                  <div
+                    class="profile d-block d-md-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center flex-md-row"
+                    >
+                      <div
+                        class="position-relative bg rounded-circle out-image"
+                      >
+                        <div
+                          class="image rounded-circle overflow-hidden bg-white border border-3"
+                        >
+                          <img
+                            class="w-100 h-100 rounded-circle"
+                            src="./avatar-2.jpg"
+                            alt="profile"
+                          />
+                        </div>
+                        <div
+                          class="check position-absolute bg-main rounded-circle text-white d-flex align-items-center justify-content-center border border-2 border-white bottom-0 end-0"
+                        >
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="data">
+                        <div class="name fw-bold">Ahmed Moneim</div>
+                        <div>VP of Operations, TechCorp</div>
+                        <div class="lin-in d-flex">
+                          <i class="fa-brands fa-linkedin"></i>
+                          <span>Verified on LinkedIn</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rate text-end d-none d-md-block">
+                      <div class="fw-bold txt-main">100K+</div>
+                      <div class="fw-medium">Downtime</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-white" data-bs-interval="2000">
+                  <div
+                    class="status d-block d-md-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex gap-3 align-items-center mb-3 mb-md-0">
+                      <div
+                        class="icon m-0 rounded-4 d-flex align-items-center justify-content-center fw-normal txt-main"
+                      >
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <div class="details">
+                        <div class="d-flex gap-1">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                        <span class="d-inline-block">0.5 rating</span>
+                      </div>
+                    </div>
+                    <div class="rounded-5 py-2 px-3 txt-main">
+                      <i class="fa-solid fa-circle-check"></i>
+                      <span>varified</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    "Clarity transformed our entire digital presence. Their
+                    team's expertise and dedication resulted in a 300% increase
+                    in our online sales. Absolutely phenomenal work!"
+                  </blockquote>
+                  <hr />
+                  <div
+                    class="profile d-block d-md-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center flex-md-row"
+                    >
+                      <div
+                        class="position-relative bg rounded-circle out-image"
+                      >
+                        <div
+                          class="image rounded-circle overflow-hidden bg-white border border-3"
+                        >
+                          <img
+                            class="w-100 h-100 rounded-circle"
+                            src="./avatar-3.jpg"
+                            alt="profile"
+                          />
+                        </div>
+                        <div
+                          class="check position-absolute bg-main rounded-circle text-white d-flex align-items-center justify-content-center border border-2 border-white bottom-0 end-0"
+                        >
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="data">
+                        <div class="name fw-bold">Ahmed Moneim</div>
+                        <div>VP of Operations, TechCorp</div>
+                        <div class="lin-in d-flex">
+                          <i class="fa-brands fa-linkedin"></i>
+                          <span>Verified on LinkedIn</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rate text-end d-none d-md-block">
+                      <div class="fw-bold txt-main">100K+</div>
+                      <div class="fw-medium">Downtime</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-white" data-bs-interval="2000">
+                  <div
+                    class="status d-block d-md-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex gap-3 align-items-center mb-3 mb-md-0">
+                      <div
+                        class="icon m-0 rounded-4 d-flex align-items-center justify-content-center fw-normal txt-main"
+                      >
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <div class="details">
+                        <div class="d-flex gap-1">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                        <span class="d-inline-block">0.5 rating</span>
+                      </div>
+                    </div>
+                    <div class="rounded-5 py-2 px-3 txt-main">
+                      <i class="fa-solid fa-circle-check"></i>
+                      <span>varified</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    "Clarity transformed our entire digital presence. Their
+                    team's expertise and dedication resulted in a 300% increase
+                    in our online sales. Absolutely phenomenal work!"
+                  </blockquote>
+                  <hr />
+                  <div
+                    class="profile d-block d-md-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center flex-md-row"
+                    >
+                      <div
+                        class="position-relative bg rounded-circle out-image"
+                      >
+                        <div
+                          class="image rounded-circle overflow-hidden bg-white border border-3"
+                        >
+                          <img
+                            class="w-100 h-100 rounded-circle"
+                            src="./avatar-3.jpg"
+                            alt="profile"
+                          />
+                        </div>
+                        <div
+                          class="check position-absolute bg-main rounded-circle text-white d-flex align-items-center justify-content-center border border-2 border-white bottom-0 end-0"
+                        >
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="data">
+                        <div class="name fw-bold">Ahmed Moneim</div>
+                        <div>VP of Operations, TechCorp</div>
+                        <div class="lin-in d-flex">
+                          <i class="fa-brands fa-linkedin"></i>
+                          <span>Verified on LinkedIn</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rate text-end d-none d-md-block">
+                      <div class="fw-bold txt-main">100K+</div>
+                      <div class="fw-medium">Downtime</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item bg-white" data-bs-interval="2000">
+                  <div
+                    class="status d-block d-md-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex gap-3 align-items-center mb-3 mb-md-0">
+                      <div
+                        class="icon m-0 rounded-4 d-flex align-items-center justify-content-center fw-normal txt-main"
+                      >
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <div class="details">
+                        <div class="d-flex gap-1">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                        <span class="d-inline-block">0.5 rating</span>
+                      </div>
+                    </div>
+                    <div class="rounded-5 py-2 px-3 txt-main">
+                      <i class="fa-solid fa-circle-check"></i>
+                      <span>varified</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    "Clarity transformed our entire digital presence. Their
+                    team's expertise and dedication resulted in a 300% increase
+                    in our online sales. Absolutely phenomenal work!"
+                  </blockquote>
+                  <hr />
+                  <div
+                    class="profile d-block d-md-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center flex-md-row"
+                    >
+                      <div
+                        class="position-relative bg rounded-circle out-image"
+                      >
+                        <div
+                          class="image rounded-circle overflow-hidden bg-white border border-3"
+                        >
+                          <img
+                            class="w-100 h-100 rounded-circle"
+                            src="./avatar-4.jpg"
+                            alt="profile"
+                          />
+                        </div>
+                        <div
+                          class="check position-absolute bg-main rounded-circle text-white d-flex align-items-center justify-content-center border border-2 border-white bottom-0 end-0"
+                        >
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="data">
+                        <div class="name fw-bold">Ahmed Moneim</div>
+                        <div>VP of Operations, TechCorp</div>
+                        <div class="lin-in d-flex">
+                          <i class="fa-brands fa-linkedin"></i>
+                          <span>Verified on LinkedIn</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rate text-end d-none d-md-block">
+                      <div class="fw-bold txt-main">100K+</div>
+                      <div class="fw-medium">Downtime</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-indicators position-static">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 3"
+                ></button>
               </div>
             </div>
-            <div class="game-card col-6 col-lg-3">
-              <div
-                class="item border border-2 p-4 overflow-hidden second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
-              >
+          </main>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container-fluid">
+          <div class="title text-center">
+            <div
+              class="main-header py-2 px-3 mb-4 rounded-5 txt-main d-inline-block fw-medium"
+            >
+              <i class="fa-solid fa-circle-question"></i>
+              <span>FAQ</span>
+            </div>
+            <h2 class="mb-4">
+              <span>Frequently Asked</span>
+              <span>Questions</span>
+            </h2>
+            <p class="fw-normal fs-5">
+              Find answers to common questions about our services, process, and
+              help transform your business.
+              <br />
+              with us.
+            </p>
+          </div>
+          <main>
+            <div
+              class="accordion d-flex flex-column gap-4"
+              id="accordionExample"
+            >
+              <div class="accordion-item rounded-4 overflow-hidden">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button p-4 rounded-4 rounded-bottom-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <span class="fw-semibold"
+                      >What services does Clarity offer?</span
+                    >
+                  </button>
+                </h2>
                 <div
-                  class="icon rounded rounded-2 d-flex align-items-center justify-content-center"
+                  id="collapseOne"
+                  class="accordion-collapse collapse rounded-4"
+                  data-bs-parent="#accordionExample"
                 >
-                  <i class="fa-solid fa-mobile-screen"></i>
+                  <div class="accordion-body p-4 pt-2">
+                    We offer a comprehensive range of digital services including
+                    web development, mobile applications, cloud solutions, AI &
+                    machine learning, digital marketing, and UI/UX design. Our
+                    team specializes in creating custom solutions tailored to
+                    your specific business needs, from initial concept through
+                    to deployment and ongoing support.
+                  </div>
                 </div>
-                <h3 class="m-0 text-center">
-                  Mobile Game
-                  <br />
-                  Development
-                </h3>
               </div>
-            </div>
-            <div class="game-card col-6 col-lg-3">
-              <div
-                class="item-img border border-2 second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
-              >
-                <img class="w-100" src="what-we-do-1.png" alt="" />
-              </div>
-            </div>
-            <div class="game-card col-6 col-lg-3">
-              <div
-                class="item border border-2 p-4 overflow-hidden second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
-              >
+              <div class="accordion-item rounded-4 overflow-hidden border-top">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed p-4 rounded-4 rounded-bottom-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <span class="fw-semibold"
+                      >How long does a typical project take?</span
+                    >
+                  </button>
+                </h2>
                 <div
-                  class="icon rounded rounded-2 d-flex align-items-center justify-content-center"
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
                 >
-                  <i class="fa-solid fa-vr-cardboard"></i>
+                  <div class="accordion-body p-4 pt-2">
+                    Project timelines vary based on complexity and scope. A
+                    simple website might take 4-6 weeks, while a complex web
+                    application or mobile app could take 3-6 months. We provide
+                    detailed project timelines during our initial consultation
+                    and keep you updated throughout the development process with
+                    regular milestones and deliverables.
+                  </div>
                 </div>
-                <h3 class="m-0 text-center">
-                  AR/VR
-                  <br />
-                  Solutions
-                </h3>
               </div>
-            </div>
-            <div class="game-card col-6 col-lg-3">
               <div
-                class="item border border-2 p-4 overflow-hidden second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
+                class="accordion-item rounded-4 rounded-4 overflow-hidden border-top"
               >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed p-4 rounded-4 rounded-bottom-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <span class="fw-semibold"
+                      >What is your development process?</span
+                    >
+                  </button>
+                </h2>
                 <div
-                  class="icon rounded rounded-2 d-flex align-items-center justify-content-center"
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
                 >
-                  <i class="fa-solid fa-cubes"></i>
+                  <div class="accordion-body p-4 pt-2">
+                    We follow an agile development methodology that includes:
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="txt-main fa-solid fa-check"></i>
+                        <strong>Discovery & Planning:</strong> Understanding
+                        your requirements and goals
+                      </li>
+                      <li>
+                        <i class="txt-main fa-solid fa-check"></i>
+                        <strong>Design:</strong> Creating wireframes and visual
+                        designs
+                      </li>
+                      <li>
+                        <i class="txt-main fa-solid fa-check"></i>
+                        <strong>Discovery & Planning:</strong> Understanding
+                        your requirements and goals
+                      </li>
+                      <li>
+                        <i class="txt-main fa-solid fa-check"></i>
+                        <strong>Design:</strong> Creating wireframes and visual
+                        designs
+                      </li>
+                      <li>
+                        <i class="txt-main fa-solid fa-check"></i>
+                        <strong>Design:</strong> Creating wireframes and visual
+                        designs
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <h3 class="m-0 text-center">
-                  AR/VR
-                  <br />
-                  Design
-                </h3>
               </div>
-            </div>
-            <div class="game-card col-6 col-lg-3">
-              <div
-                class="item-img border border-2 second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
-              >
-                <img class="w-100" src="what-we-do-1.png" alt="" />
-              </div>
-            </div>
-            <div class="game-card col-6 col-lg-3">
-              <div
-                class="item border border-2 p-4 overflow-hidden second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
-              >
+              <div class="accordion-item rounded-4 overflow-hidden border-top">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed p-4 rounded-4 rounded-bottom-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <span class="fw-semibold"
+                      >What technologies do you work with?</span
+                    >
+                  </button>
+                </h2>
                 <div
-                  class="icon rounded rounded-2 d-flex align-items-center justify-content-center"
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
                 >
-                  <i class="fa-brands fa-playstation"></i>
+                  <div class="accordion-body p-4 pt-2">
+                    We work with cutting-edge technologies across the full
+                    stack. For frontend, we use React, Vue.js, Angular, and
+                    Next.js. Our backend expertise includes Node.js, Python,
+                    Golang, and Java. We're proficient in cloud platforms like
+                    AWS, Azure, and Google Cloud, and work with both SQL and
+                    NoSQL databases. We always choose the best technology stack
+                    for your specific project requirements.
+                  </div>
                 </div>
-                <h3 class="m-0 text-center">
-                  PS4 game
-                  <br />
-                  development
-                </h3>
+              </div>
+
+              <div class="accordion-item rounded-4 overflow-hidden border-top">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed p-4 rounded-4 rounded-bottom-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <span class="fw-semibold"
+                      >How do you ensure project security and data
+                      privacy?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-4 pt-2">
+                    Security is our top priority. We implement industry-standard
+                    security practices including encryption, secure
+                    authentication, regular security audits, and compliance with
+                    data protection regulations (GDPR, HIPAA, etc.). All our
+                    developers sign NDAs, and we use secure development
+                    practices throughout the entire project lifecycle. We also
+                    provide security documentation and training for your team.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item rounded-4 overflow-hidden border-top">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed p-4 rounded-4 rounded-bottom-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    <span class="fw-semibold"
+                      >Do you provide ongoing support and maintenance?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-4 pt-2">
+                    Yes! We offer comprehensive support and maintenance packages
+                    to ensure your solution continues to perform optimally. This
+                    includes bug fixes, security updates, performance
+                    optimization, feature enhancements, and technical support.
+                    We can customize a maintenance plan that fits your specific
+                    needs and budget.
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="game-card col-6 col-lg-3">
-              <div
-                class="item border border-2 p-4 overflow-hidden second-bg d-flex align-items-center justify-content-center flex-column text-white m-0"
-              >
+          </main>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container-fluid">
+          <div class="title text-center">
+            <div
+              class="main-header py-2 px-3 mb-4 rounded-5 txt-main d-inline-block fw-medium"
+            >
+              <i class="fa-solid fa-rocket"></i>
+              <span>Let's Start Your Journey</span>
+            </div>
+            <h2 class="mb-4">
+              <span>Ready to</span>
+              <br />
+              <span>Transform?</span>
+            </h2>
+            <p class="fw-normal fs-5">
+              Take the first step towards digital excellence. Our experts are
+              ready to turn your
+              <br />
+              vision into reality.
+            </p>
+          </div>
+          <main>
+            <div class="overflow-hidden">
+              <div class="row g-0">
+                <div class="right col-12 col-lg-8">
+                  <div class="p-5">
+                    <form action="">
+                      <div class="title mb-32">
+                        <h3 class="fw-bold fs-4">Get Your Free Consultation</h3>
+                        <p class="fw-normal fs-6">
+                          Fill out the form and we'll get back to you within 24
+                          hours with a personalized proposal.
+                        </p>
+                      </div>
+                      <div class="first d-block d-md-flex mb-32 gap-4">
+                        <div class="w-100">
+                          <label
+                            class="mb-12 fw-semibold text-black"
+                            for="fname"
+                            >First Name*</label
+                          >
+                          <br />
+                          <input
+                            class="rounded-4 w-100 bg-secondary-subtle border-0"
+                            type="text"
+                            id="fname"
+                            name="_fname"
+                            placeholder="ahmed"
+                          />
+                        </div>
+                        <div class="w-100">
+                          <label class="mb-12 fw-semibold text-black" for="last"
+                            >Last Name*</label
+                          >
+                          <br />
+                          <input
+                            class="w-100 bg-secondary-subtle rounded-4 border-0"
+                            type="text"
+                            id="last"
+                            name="_last"
+                            placeholder="moneim"
+                          />
+                        </div>
+                      </div>
+                      <div class="second d-block d-md-flex mb-32 gap-4">
+                        <div class="w-100">
+                          <label
+                            class="mb-12 fw-semibold text-black"
+                            for="email"
+                            >Email Address *</label
+                          >
+                          <br />
+                          <input
+                            class="rounded-4 w-100 bg-secondary-subtle border-0"
+                            type="email"
+                            id="email"
+                            name="_email"
+                            placeholder="ahmed@company.com"
+                          />
+                        </div>
+                        <div class="w-100">
+                          <label
+                            class="mb-12 fw-semibold text-black"
+                            for="company"
+                            >company</label
+                          >
+                          <br />
+                          <input
+                            class="w-100 bg-secondary-subtle rounded-4 border-0"
+                            type="text"
+                            id="company"
+                            name="_company"
+                            placeholder="Your company name"
+                          />
+                        </div>
+                      </div>
+                      <div class="third d-block d-md-flex mb-32 gap-4">
+                        <div class="w-100">
+                          <label class="mb-12 fw-semibold text-black" for="pay"
+                            >Primary Interest</label
+                          >
+                          <br />
+                          <select
+                            class="rounded-4 w-100 bg-secondary-subtle border-0"
+                            type="pay"
+                            id="pay"
+                            name="_pay"
+                          >
+                            <option value="choose your focus area">
+                              choose your focus area
+                            </option>
+                            <option value="web development $ Design">
+                              web development $ Design
+                            </option>
+                            <option value="AI & Machine Learning">
+                              AI & Machine Learning
+                            </option>
+                            <option value="Mobile App Development">
+                              Mobile App Development
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="fourth d-block d-md-flex mb-32 gap-4">
+                        <div class="w-100">
+                          <label class="mb-12 fw-semibold text-black" for="area"
+                            >TimeLine</label
+                          >
+                          <br />
+                          <select
+                            class="rounded-4 w-100 bg-secondary-subtle border-0"
+                            id="tline"
+                            name="_tline"
+                          >
+                            <option value="">When do you want to start?</option>
+                            <option value="immediately">Immediately</option>
+                            <option value="within-1-month">
+                              Within 1 month
+                            </option>
+                            <option value="within-3-months">
+                              Within 3 months
+                            </option>
+                            <option value="within-6-months">
+                              Within 6 months
+                            </option>
+                            <option value="exploring">
+                              Just exploring options
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="fifth d-block d-md-flex mb-32 gap-4">
+                        <div class="w-100">
+                          <label
+                            class="mb-12 fw-semibold text-black"
+                            for="tline"
+                            >Project Budget Range</label
+                          >
+                          <div class="row g-3">
+                            <div class="item col-12 col-md-4 col-lg-4">
+                              <div class="inner p-3 border border-2">
+                                <p
+                                  class="text-center fw-semibold text-black m-0"
+                                >
+                                  $25K - $50K
+                                </p>
+                                <p class="text-center m-0">Growth</p>
+                              </div>
+                            </div>
+                            <div class="item col-12 col-md-4 col-lg-4">
+                              <div class="inner p-3 border border-2">
+                                <p
+                                  class="text-center fw-semibold text-black m-0"
+                                >
+                                  $25K - $50K
+                                </p>
+                                <p class="text-center m-0">Growth</p>
+                              </div>
+                            </div>
+                            <div class="item col-12 col-md-4 col-lg-4">
+                              <div class="inner p-3 border border-2">
+                                <p
+                                  class="text-center fw-semibold text-black m-0"
+                                >
+                                  $25K - $50K
+                                </p>
+                                <p class="text-center m-0">Growth</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sixth d-block d-md-flex mb-32 gap-4">
+                        <div class="w-100">
+                          <label class="mb-12 fw-semibold text-black" for="area"
+                            >Tell us about your project</label
+                          >
+                          <br />
+                          <textarea
+                            rows="6"
+                            class="rounded-4 w-100 bg-secondary-subtle border-0"
+                            name="_area"
+                            id="area"
+                            placeholder="Describe your project goals, challenges, and what success looks like for you..."
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="seventh mb-32 gap-4 pt-3">
+                        <input type="checkbox" name="check" id="label" />
+                        <label for="label"
+                          ><span
+                            >I agree to receive communications and accept the
+                            <a href="#">Privacy Policy</a>
+                          </span></label
+                        >
+                      </div>
+                      <div class="eighth mb-32 gap-4 pt-3">
+                        <button
+                          class="w-100 rounded-4 border-0 fw-bold text-white"
+                          type="button"
+                        >
+                          Get My Free Consultation
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="left col-12 col-lg-4 bg-main text-white">
+                  <div class="p-5">
+                    <h4 class="mb-32 fw-bold fs-4">Why Choose Clarity?</h4>
+                    <div class="items mb-5">
+                      <div class="d-flex mb-32">
+                        <div
+                          class="icon col-3 d-flex align-items-center justify-content-center me-3"
+                        >
+                          <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="col-9">
+                          <h5 class="fw-semibold">24-Hour Response</h5>
+                          <p class="m-0 fw-normal">
+                            Quick turnaround on all inquiries with detailed
+                            project analysis
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex mb-32">
+                        <div
+                          class="icon col-3 d-flex align-items-center justify-content-center me-3"
+                        >
+                          <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="col-9">
+                          <h5 class="fw-semibold">100% Satisfaction</h5>
+                          <p class="m-0 fw-normal">
+                            Money-back guarantee if you're not completely
+                            satisfied
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex mb-32">
+                        <div
+                          class="icon col-3 d-flex align-items-center justify-content-center me-3"
+                        >
+                          <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="col-9">
+                          <h5 class="fw-semibold">Expert Team</h5>
+                          <p class="m-0 fw-normal">
+                            150+ certified professionals with 8+ years
+                            experience
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="di-cont border-top pt-32">
+                      <h5 class="mb-3 fw-semibold">Direct Contact</h5>
+                      <div>
+                        <div class="mb-12">
+                          <i class="me-12 fa-solid fa-phone"></i>
+                          <span>+1 (555) 123-4567</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mb-12">
+                          <i class="me-12 fa-solid fa-envelope"></i>
+                          <span>hello@clarity.com</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mb-12">
+                          <i class="me-12 fa-solid fa-location-dot"></i>
+                          <span>San Francisco, CA</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="top d-block d-md-flex gap-4 py-5">
+          <div class="right w-50">
+            <div>
+              <div class="d-flex align-items-center mb-12">
                 <div
-                  class="icon rounded rounded-2 d-flex align-items-center justify-content-center"
+                  class="icon me-2 bg-main text-white d-flex align-items-center justify-content-center"
                 >
                   <i class="fa-solid fa-cube"></i>
                 </div>
-                <h3 class="m-0 text-center">
-                  3D
-                  <br />
-                  Modelings
-                </h3>
+                <span class="fw-bold text-black">Clarity</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sponsers bg-black px-4" id="sponsers">
-      <div class="light"></div>
-      <div class="py-3 overflow-hidden position-relative">
-        <div class="tape tape-1 d-flex gap-3 flex-nowrap">
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-1.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-3.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-4.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-5.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-6.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-7.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-8.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-9.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-10.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-11.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-12.jpg" alt="" />
-            </div>
-          </div>
 
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-1.jpg" alt="" />
+              <p>
+                Transforming businesses through innovative digital solutions and
+                cutting-edge technology.
+              </p>
             </div>
           </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-3.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-4.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-5.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-6.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-7.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-8.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-9.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-10.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-11.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-12.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="tape tape-2 d-flex gap-3 flex-nowrap mt-4">
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-1.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-3.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-4.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-5.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-6.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-7.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-8.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-9.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-10.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-11.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-12.jpg" alt="" />
-            </div>
-          </div>
-
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-1.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-3.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-4.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-5.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-6.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-7.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-8.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-9.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-10.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-11.jpg" alt="" />
-            </div>
-          </div>
-          <div class="item p-0 m-0">
-            <div class="sponser-img overflow-hidden">
-              <img src="logo-12.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="team bg-black" id="team">
-      <div class="container-xl">
-        <div class="title">
-          <p class="text">our team</p>
-          <h2 class="m-0">our best team members</h2>
-          <p class="title-desc mt-4 text-secondary">
-            Meet the professional gamers and experts behind our success
-          </p>
-        </div>
-        <div class="members row">
-          <div class="item 2 col-md-6 col-xl-3">
-            <figure
-              class="w-100 overflow-hidden position-relative rounded rounded-4"
-            >
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-1.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <figure class="overflow-hidden position-relative rounded rounded-4">
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-2.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <figure class="overflow-hidden position-relative rounded rounded-4">
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-3.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <figure class="overflow-hidden position-relative rounded rounded-4">
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-4.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <figure
-              class="w-100 overflow-hidden position-relative rounded rounded-4"
-            >
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-5.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <figure class="overflow-hidden position-relative rounded rounded-4">
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-6.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <figure class="overflow-hidden position-relative rounded rounded-4">
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-7.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <figure class="overflow-hidden position-relative rounded rounded-4">
-              <img
-                class="rounded rounded-4 w-100 h-100"
-                src="avatar-8.png"
-                alt=""
-              />
-              <div class="content p-4 position-absolute d-flex">
-                <div class="left">
-                  <h3 class="m-0 main-clr mb-1 fw-bold fs-5 lh-1">
-                    Ahmed<span> "moneim" </span>mohamed
-                  </h3>
-                  <p class="job lh-sm m-0 text-white">
-                    Pro Player - Apex Legends
-                  </p>
-                  <p class="lead champ m-0 text-secondary">Rising Star 2023</p>
-                </div>
-                <div class="right fw-bold main-clr">moneim</div>
-              </div>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="contact" id="contact">
-      <div class="container-xl px-4">
-        <div class="title">
-          <p class="text">CONTACT US</p>
-          <h2 class="m-0">Get In Touch</h2>
-          <p class="title-desc mt-4 text-secondary">
-            Have questions or need support? We're here to help!
-          </p>
-        </div>
-        <div class="inner d-xl-flex gap-5">
-          <div class="contact-details col-xl-6">
-            <div class="item third-bg rounded-4 d-flex">
-              <div class="icon me-4">
-                <span class="fa-stack fa-2x">
-                  <i class="fa-solid main-clr fa-circle fa-stack-2x"></i>
-                  <i
-                    class="fa-solid text-black fs-4 fa-location-dot fa-stack-1x fa-inverse"
-                  ></i>
-                </span>
-              </div>
-              <div class="desc">
-                <h3 class="days-font text-white fw-bold fs-5 m-0">
-                  Our Location
-                </h3>
-                <p class="m-0 text-secondary">
-                  123 Gaming Street, Esports City, EC 12345
-                </p>
-              </div>
-            </div>
-            <div class="item third-bg rounded-4 d-flex">
-              <div class="icon me-4">
-                <span class="fa-stack fa-2x">
-                  <i class="fa-solid main-clr fa-circle fa-stack-2x"></i>
-                  <i
-                    class="fa-solid text-black fs-4 fa-phone fa-stack-1x fa-inverse"
-                  ></i>
-                </span>
-              </div>
-              <div class="desc">
-                <h3 class="days-font text-white fw-bold fs-5 m-0">
-                  Our Location
-                </h3>
-                <p class="m-0 text-secondary">
-                  123 Gaming Street, Esports City, EC 12345
-                </p>
-              </div>
-            </div>
-            <div class="item third-bg rounded-4 d-flex">
-              <div class="icon me-4">
-                <span class="fa-stack fa-2x">
-                  <i class="fa-solid main-clr fa-circle fa-stack-2x"></i>
-                  <i
-                    class="fa-solid text-black fs-4 fa-envelope fa-stack-1x fa-inverse"
-                  ></i>
-                </span>
-              </div>
-              <div class="desc">
-                <h3 class="days-font text-white fw-bold fs-5 m-0">
-                  Our Location
-                </h3>
-                <p class="m-0 text-secondary">
-                  123 Gaming Street, Esports City, EC 12345
-                </p>
-              </div>
-            </div>
-            <div class="item third-bg rounded-4">
-              <h3 class="days-font fw-bold fs-4 mb-3">Join Our Community</h3>
-              <p class="m-0">123 Gaming Street, Esports City, EC 12345</p>
-              <div class="icon">
-                <span class="fa-stack fa-1x fs-4">
-                  <i class="fa-solid text-black fa-circle fa-stack-2x"></i>
-                  <i
-                    class="fa-brands fa-discord main-clr fa-stack-1x fa-inverse"
-                  ></i>
-                </span>
-                <span class="fa-stack fa-1x fs-4">
-                  <i class="fa-solid text-black fa-circle fa-stack-2x"></i>
-                  <i
-                    class="fa-brands fa-x-twitter main-clr fa-stack-1x fa-inverse"
-                  ></i>
-                </span>
-                <span class="fa-stack fa-1x fs-4">
-                  <i class="fa-solid text-black fa-circle fa-stack-2x"></i>
-                  <i
-                    class="fa-brands fa-instagram main-clr fa-stack-1x fa-inverse"
-                  ></i>
-                </span>
-                <span class="fa-stack fa-1x fs-4">
-                  <i class="fa-solid text-black fa-circle fa-stack-2x"></i>
-                  <i
-                    class="fa-brands fa-youtube main-clr fa-stack-1x fa-inverse"
-                  ></i>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="form col-xl-6 third-bg text-white rounded-4">
-            <h3 class="fw-bold days-font fs-4">Send us a Message</h3>
-            <form action="">
-              <div class="item mb-4 d-md-flex gap-4">
-                <div class="flex-grow-1 mb-4 mb-md-0">
-                  <label for="f_name">first name</label>
-                  <input
-                    type="text"
-                    name="_fname"
-                    id="f_name"
-                    placeholder="enter your first name"
-                  />
-                </div>
-                <div class="flex-grow-1">
-                  <label for="l_name">last name</label>
-                  <input
-                    type="text"
-                    name="_lname"
-                    id="l_name"
-                    placeholder="enter your last name"
-                  />
-                </div>
-              </div>
-              <div class="item mb-4">
-                <label for="email">Email addresse</label>
-                <input
-                  type="email"
-                  name="_email"
-                  id="email"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              <div class="item mb-4">
-                <label for="subject">subject</label>
-                <select name="_subject" id="subject">
-                  <option value="1">General Inquiry</option>
-                  <option value="2">Tournament Support</option>
-                  <option value="3">General Inquiry</option>
-                  <option value="4">Tournament Support</option>
-                </select>
-              </div>
-              <div class="item mb-4">
-                <label for="message">message</label>
-                <textarea
-                  name="_message"
-                  id="message"
-                  placeholder="tell us how we can help you..."
-                ></textarea>
-              </div>
-              <div class="item mb-4 d-flex">
-                <input
-                  type="checkbox"
-                  name="_subscribtion"
-                  id="subscribtion"
-                  value="subscribed"
-                />
-                <label for="subscribtion"
-                  >Subscribe to our newsletter for gaming updates</label
-                >
-              </div>
-              <button
-                class="shine py-3 px-4 w-100 rounded-3 main-bg fw-bold f"
-                type="submit"
-              >
-                send Message
-                <i class="text-black fa-solid fa-paper-plane"></i>
-              </button>
-            </form>
-            <div
-              class="available d-flex text-center border-top border-secondary"
-            >
-              <div class="flex-grow-1">
-                <p class="fw-bold fs-4 mb-1 main-clr">24/7</p>
-                <p class="m-0">Support Available</p>
-              </div>
-              <div class="flex-grow-1 me-auto text-center">
-                <p class="fw-bold fs-4 mb-1 main-clr">&lt; 1hr</p>
-                <p class="m-0">Average Response</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="bg-black" id="footer">
-      <div class="container-xl">
-        <div class="links row g-0 mb-5">
-          <div class="item col-12 col-md-6 col-xl-3">
-            <div>
-              <header
-                class="mb-4 fs-5 fw-bold main-clr d-flex align-items-center"
-              >
-                <i class="fa-solid fa-gamepad me-2 fs-4 main-clr"> </i>
-                GameArena
-              </header>
-              <article class="mb-4">
-                The ultimate destination for competitive gaming, esports
-                tournaments, and gaming community.
-              </article>
-              <div class="media">
-                <a class="me-3" href="#"
-                  ><span class="visually-hidden">X-twitter</span>
-                  <i class="fa-brands fa-x-twitter text-secondary"></i
-                ></a>
-                <a class="me-3" href="#"
-                  ><span class="visually-hidden">facebook</span>
-                  <i class="fa-brands fa-facebook text-secondary"></i
-                ></a>
-                <a class="me-3" href="#"
-                  ><span class="visually-hidden">instagram</span>
-                  <i class="fa-brands fa-instagram text-secondary"></i
-                ></a>
-                <a class="me-3" href="#"
-                  ><span class="visually-hidden">youtube</span>
-                  <i class="fa-brands fa-youtube text-secondary"></i
-                ></a>
-                <a class="me-3" href="#"
-                  ><span class="visually-hidden">twitch</span>
-                  <i class="fa-brands fa-twitch text-secondary"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <div>
-              <h4 class="mb-4 days-font fw-bold fs-5 text-white">Games</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-decoration-none" href="#">VALORANT</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#"
-                    >League of Legends
-                  </a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">CS:GO</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Dota 2</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Apex Legends</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <div>
-              <h4 class="mb-4 days-font fw-bold fs-5 text-white">
-                Tournaments
-              </h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-decoration-none" href="#">Upcoming Events</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Live Matches </a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Results</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Rankings</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Schedule</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="item col-12 col-md-6 col-xl-3">
-            <div>
-              <h4 class="mb-4 days-font fw-bold fs-5 text-white">Support</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-decoration-none" href="#">Help Center</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Contact Us </a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Bug Reports</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#">Feature Requests</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none" href="#"
-                    >Community Guidelines</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="rights">
           <div
-            class="d-flex flex-column align-items-center flex-md-row align-items-md-stretch justify-content-md-between"
+            class="left w-50 d-flex justify-content-start justify-content-md-end align-items-center gap-2"
           >
-            <p>© 2025 GameArena. All rights reserved.</p>
-            <div class="d-flex gap-4">
-              <a class="text-decoration-none" href="#">Privacy Policy</a>
-              <a class="text-decoration-none" href="#">Terms of Service</a>
-              <a class="text-decoration-none" href="#">Cookie Policy</a>
+            <div
+              class="icon d-flex align-items-center justify-content-center bg-secondary-subtle m-0"
+            >
+              <a class="text-secondary" href="">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center bg-secondary-subtle m-0"
+            >
+              <a class="text-secondary" href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center bg-secondary-subtle m-0"
+            >
+              <a class="text-secondary" href="">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center bg-secondary-subtle m-0"
+            >
+              <a class="text-secondary" href="">
+                <i class="fa-brands fa-dribbble"></i>
+              </a>
             </div>
           </div>
+        </div>
+        <div class="bottom d-flex flex-column gap-2 py-4 border-top">
+          <p class="m-0 text-center">© 2025 Clarity. All rights reserved.</p>
+          <p class="m-0 text-center">
+            Made with <span><i class="fa-solid fa-heart"></i></span> for amazing
+            experiences
+          </p>
         </div>
       </div>
     </footer>
+
     <script
-      src="bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
   </body>
 </html>
