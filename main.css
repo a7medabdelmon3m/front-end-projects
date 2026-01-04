@@ -456,7 +456,7 @@ hr {
   background-color: var(--main-color) !important;
   width: 10px !important;
   height: 10px !important;
-  border-radius: 50%;
+  border-radius: 999px;
   transition: all 0.5s !important;
   transform-origin: center !important;
 }
