@@ -9,19 +9,19 @@ A modern, fully responsive landing page built as part of a frontend training pro
 ## 📸 Preview
 
 <div align="center">
-  <img src="https://github.com/a7medabdelmon3m/front-end-projects/assets/preview1.png" alt="Clarity Hero Section" width="800px" />
+  <img src="https://github.com/a7medabdelmon3m/front-end-projects/ahmed-abdelmoneim-sat-tue-6-9-01207179348-exam/assets/preview1.png" alt="Clarity Hero Section" width="800px" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github.com/a7medabdelmon3m/front-end-projects/assets/preview2.png" alt="Comprehensive Digital Solutions" width="800px" />
+  <img src="https://github.com/a7medabdelmon3m/front-end-projects/ahmed-abdelmoneim-sat-tue-6-9-01207179348-exam/assets/preview2.png" alt="Comprehensive Digital Solutions" width="800px" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github.com/a7medabdelmon3m/front-end-projects/assets/preview3.png" alt="Client Testimonials" width="800px" />
+  <img src="https://github.com/a7medabdelmon3m/front-end-projects/ahmed-abdelmoneim-sat-tue-6-9-01207179348-exam/assets/preview3.png" alt="Client Testimonials" width="800px" />
 </div>
 
 ---
