@@ -1,29 +1,58 @@
-# Digital Solutions That Drive Growth - Landing Page
+# Clarity - Digital Solutions Landing Page 🚀
 
-A modern, fully responsive landing page built as part of a frontend training program, focusing on high-performance design, interactive UI elements, and a seamless user experience across all devices.
+A modern, fully responsive landing page built as part of a frontend training program, designed to highlight growth-driven digital solutions, tech tracks, client testimonials, and interactive features.
 
-## 🚀 Overview
-This project showcases a professional platform designed to highlight growth-driven digital solutions and educational courses. It provides users with a clear overview of various tech tracks—including Frontend, Backend, Databases, and Cloud & DevOps.
+🔗 **Live Demo:** [front-end-projects-three.vercel.app](https://front-end-projects-three.vercel.app/)
+
+---
+
+## 📸 Preview
+
+<div align="center">
+  <img src="https://github.com/a7medabdelmon3m/front-end-projects/assets/preview1.png" alt="Clarity Hero Section" width="800px" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/a7medabdelmon3m/front-end-projects/assets/preview2.png" alt="Comprehensive Digital Solutions" width="800px" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/a7medabdelmon3m/front-end-projects/assets/preview3.png" alt="Client Testimonials" width="800px" />
+</div>
+
+---
 
 ## ✨ Key Features
-* **Tech Tracks Exploration:** Detailed sections introducing different career paths and technologies used in Web Development, Databases, and DevOps.
-* **Client Reviews & Testimonials:** A dedicated section displaying client feedback and ratings.
-* **FAQ Section:** Interactive Frequently Asked Questions component to address common inquiries.
-* **Interactive Contact Form:** A beautifully styled and engaging contact form for user inquiries.
+
+* **Hero Section:** Clean layout with quick call-to-action buttons and dynamic branding.
+* **Comprehensive Digital Solutions:** Highlights services across Web Development, Mobile Applications, and Cloud Solutions.
+* **Tech Tracks Exploration:** Clear breakdown of technologies used in various tracks (Frontend, Backend, Databases, DevOps).
+* **Client Reviews & Testimonials:** Interactive feedback and rating display section.
+* **FAQ Section:** Frequently Asked Questions component for user inquiries.
+* **Interactive Contact Form:** Secure and beautifully styled form for user engagement.
 * **Fully Responsive Design:** Optimized for mobile, tablet, and desktop screens using a mobile-first approach.
 
+---
+
 ## 🛠️ Tech Stack & Tools
+
 * **HTML5 & CSS3**
 * **Tailwind CSS**
 * **Bootstrap**
 * **JavaScript (ES6+)**
-* **Git & GitHub**
+* **Git, GitHub & Vercel**
 
-## 📱 Responsiveness
-The layout was meticulously crafted using CSS Flexbox, Grid, and utility classes from both Tailwind and Bootstrap to ensure flawless responsiveness across all screen sizes.
+---
 
 ## 📬 Contact
+
 * **Ahmed Abdelmoneim** - Frontend Web & Mobile Developer
 * **Email:** ahnedmoneimhacher26@gmail.com
 * **Phone / WhatsApp:** +20 120 717 9348
 * **LinkedIn:** [linkedin.com/in/ahmed-abdelmoneim-b7b4b32a6](https://www.linkedin.com/in/ahmed-abdelmoneim-b7b4b32a6)
+
+---
